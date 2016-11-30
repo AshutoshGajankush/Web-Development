@@ -6,19 +6,19 @@
 		#top-bar {
 			margin:0 auto;
 			width: 1000px;
-			height: 35px;
+			height: 32px;
 		}
 		body {
 			margin:0;
 			padding:0;
+			font-family: Helvetica;
 		}
 		#bbc-logo {
 			width: 90px;
-			margin:5px 5px;
+			margin:4px 5px;
 			float:left;
 		}
 		
-
 		#signin-logo{
 			float: left;
 			height: 21px;
@@ -32,7 +32,7 @@
 		}
 
 		#signing-text{
-			font-family: Helvetica,Arial,sans-serif;
+			
 			font-weight: bold;
 			font-size:80%;
 			position: relative;
@@ -47,7 +47,7 @@
 			padding: 12px 11px 0px 11px;
 			height: 27px;
 			font-weight: bold;
-			font-family: Helvetica,Arial,sans-serif;
+			
 		}
 		#more-arrow{
 			height:10px;
@@ -76,7 +76,6 @@
 
 		#menu-bar-container{
 			background-color: #BB1919;
-			width: 100%;
 			height:55px;
 		}
 
@@ -89,7 +88,7 @@
 			padding: 0;
 			color: white;
 			font-size: 40px;
-			font-family: Helvetica;
+			
 			font-weight: normal;
 			padding-top:5px;
 			padding-left:5px;
@@ -109,7 +108,7 @@
 
 		.dark-red{
 			float: left;
-			font-family: Helvetica;
+			
 			margin:0;
 			color: white;
 			font-weight: normal;
@@ -117,6 +116,11 @@
 			padding-top: 10px;
 			padding-left: 5px;
 			padding-right: 12px;
+			text-decoration: none;
+		}
+
+		a:hover{
+			text-decoration: underline;
 		}
 		.small-red-bar{
 			float:left;
@@ -131,6 +135,125 @@
 			padding-top:12px;
 			margin-left:-8px;
 		}
+
+		#article-container{
+			margin:0 auto;
+			width:1000px;
+			
+		}
+		#main-article-container{
+			width:665px;
+			float:left;
+			margin-top: -12px;
+			border-right:1.5px #C1C1C1 solid;
+		}
+		h2{
+			font-weight: normal;
+			font-size: 20px;
+			border-bottom: 2.5px solid #BB4545;
+			width:103px;
+			position:relative;
+			top: -5px;
+			left:2px;
+		}
+
+		h3 a{
+			text-decoration: none;
+			font-size:32px;
+			color:black;
+			font-weight: bold;
+		}
+		h3 a:hover{
+			color:#117EC5;
+			text-decoration: none;
+		}
+
+		#left-text{
+			font-size: 14px;
+			width:232px;
+			color: #5A5A5A;
+			float:left;
+			margin-top: -12px;
+			margin-right: 12px;
+		}
+		#left-text a{
+			text-decoration: none;
+			color:black;
+		}
+		#left-text a:hover{
+			color:#117EC5;
+			text-decoration: none;
+		}
+		.clock-image{
+			width: 18px;
+			margin-top:-2px;
+			margin-right: 5px;
+			float:left;
+		}
+		.time{
+			margin-top: -5px;
+		}
+		.time a{
+			text-decoration: none;
+			border-left: 1.5px #C1C1C1 solid; 
+			padding-left:6px;
+		}
+		.time a:hover{
+			color:#117EC5;
+			text-decoration: none;	
+		}
+		
+		#article-hr{
+			border-top: 1.5px solid #A91717;
+			width: 40px;
+			margin-top: -7px;
+			margin-left:5px;
+		}
+
+		#article-image{
+			width:400px;
+			padding-right: 20px;
+		}
+
+		#watch-listen{
+			float:left;
+			width:280px;
+			position:relative;
+			top: -5px;
+			left: 20px;
+		}
+		#wl-heading{
+			font-weight: normal;
+			font-size: 24px;
+		}
+		.article-right{
+			padding-bottom: 1px;
+		}
+		.article-image-right{
+			width: 110px;
+			float:left;
+		}
+		
+		.article-right-text{
+			position:relative;
+			left: 10px;
+			font-size:14px;
+		}
+		.article-right-text a{
+			text-decoration: none;
+			font-weight: bold;
+			color:black;
+		}
+		.article-right-text a:hover{
+			color:#117EC5;
+			text-decoration: none;
+		}
+		.right-time{
+			font-size: 12px;
+			margin-top:-7px;
+		}
+		
+		
 	</style>
 </head>
 
@@ -183,46 +306,110 @@
 		</div>
 	</div>
 
+	<div class="clear"></div>
+
 	<div id="menu-red-bar">
 		<div id="menu-red-buttons">
-			<h2 class="dark-red">Home</h2>
+			<a href="" class="dark-red">Home</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Vedio</h2>
+			<a href="" class="dark-red">Vedio</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">World</h2>
+			<a href="" class="dark-red">World</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">US &#38 Canada</h2>
+			<a href="" class="dark-red">US &#38 Canada</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">UK</h2>
+			<a href="" class="dark-red">UK</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Business</h2>
+			<a href="" class="dark-red">Business</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Tech</h2>
+			<a href="" class="dark-red">Tech</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Science</h2>
+			<a href="" class="dark-red">Science</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Magazine</h2>
+			<a href="" class="dark-red">Magazine</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Entertainment &#38 Arts</h2>
+			<a href="" class="dark-red">Entertainment &#38 Arts</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">Health</h2>
+			<a href="" class="dark-red">Health</a>
 			<div class="small-red-bar">
 			</div>
-			<h2 class="dark-red">More</h2>
+			<a href="" class="dark-red">More</a>
 			<img id="magazine-arrow" src="images/magazine-arrow.png">
-		</div>
+		</div>	
+	</div>
 
-		
+	<div class="clear"></div>
+
+	<div id="article-container"	>
+	
+		<h2>Technology</h2>
+		<div id="main-article-container">
+		<h3><a href="">'Snoopers law creates security nightmare'</a></h3>
+		<div id="left-text">
+			<p>As the Investigatory Powers Bill gets royal assent, the web's inventor fears our net histories will be hacked.</p>
+			<p class="time">
+				<img class="clock-image" src="images/clock.png">
+				<span>29 November 2016</span>
+				<a href="">Technology</a>
+			</p>
+			<hr id="article-hr" align="left">
+			<p><a href="">'Snooping law' petition hits target</a></p>
+			<p><a href="">Tech firms seek to thwart 'snooping law'</a></p>
+			<p><a href="">Spy bill 'includes new safeguards'</a></p>
+			
+		</div>
+			<img id="article-image" src="images/article.png">
+		</div>
+	</div>
+	<div id="watch-listen">
+
+		<h3 id="wl-heading">Watch/Listen</h3>
+		<div class="article-right">
+			<img class="article-image-right" src="images/1-article.png">
+			<div class="article-right-text">
+				<p><a href="">Ex-astronaut plans high altitude tours</a></p>
+				
+					<p class="time"><img class="clock-image" src="images/clock.png">
+						<span>29 November 2016</span>
+						<a href="">Technology</a>
+					</p>
+				
+			</div>
+		</div>
+		<div class ="article-right">
+			<img class = "article-image-right" src="images/2-article.png">
+			<div class="article-right-text">
+				<p><a href="">Hands-on with phone number harvesting apps</a></p>
+				
+					<p class="time"><img class="clock-image" src="images/clock.png">
+						<span>25 November 2016</span>
+						<a href="">Technology</a>
+					</p>
+				
+			</div>
+		</div>
+		<div class="article-right">
+			<img class = "article-image-right" src="images/3-article.png">
+			<div class="article-right-text">
+				<p><a href="">The US telescope for alien life</a></p>
+				
+					<p class="time"><img class="clock-image" src="images/clock.png">
+						<span>26 November 2016</span>
+						<a href="">Technology</a>
+					</p>
+				
+			</div>
+		</div>
 	</div>
 </body>
 </html>
