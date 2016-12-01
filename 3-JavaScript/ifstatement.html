@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>If Statement</title>
+
+	</head>
+
+	<body>
+		<p>What is the word?</p>
+		<input type="text" id="textInput">
+		<button id="submit">Submit</button>
+		<script type="text/javascript">
+			var word = "Ashutosh";
+			document.getElementById("submit").onclick = function(){
+			var enteredWord = document.getElementById("textInput").value
+
+			if(enteredWord == word){
+				alert("You are Right");
+			} else{
+				alert("You are Wrong!!");
+			}
+			}
+		</script>
+	</body>
+
+</html>

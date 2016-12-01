@@ -12,6 +12,11 @@
 		<button id="secondButton">Change 2nd Text</button>
 		<p id="emptyParagraph"></p>
 		<button id="createButton">Create Text</button>
+
+		<p id="styling">Styling using JavaScript</p>
+		<button id="stylingButton">Click to Style</button>
+
+
 		<script type="text/javascript">
 			document.getElementById("myButton").onclick = function() {
 
@@ -24,6 +29,11 @@
 
 			document.getElementById("createButton").onclick = function(){
 				document.getElementById("emptyParagraph").innerHTML = "New Text!!!";
+			}
+
+			document.getElementById("stylingButton").onclick = function(){
+				document.getElementById("styling").style.color = "red";
+				document.getElementById("styling").style.fontSize = "50px";		
 			}
 		</script>
 	</body>
