@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Loops</title>
+
+	</head>
+
+	<body>
+		
+	<div id="tweetdiv"></div>
+		<script type="text/javascript">
+		var tweetString = "";
+		var tweets = ["Hi everyone!", "I love Cornflakes!!", "Night Night :)"];
+
+		//While Loop
+
+		var i = 0;
+
+		while(i<tweets.length){
+
+			tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+			i++;	
+
+		}
+		console.log(tweetString);
+		document.getElementById("tweetdiv").innerHTML = tweetString;
+		tweetString = "";
+		// For Loop
+		for (i =0;i<tweets.length;i++){
+
+			tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+		}
+		console.log(tweetString);
+		document.getElementById("tweetdiv").innerHTML = tweetString;
+
+		</script>
+		
+
+
+	</body>
+
+</html>
