@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+	<title>jQuery-UI</title>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    
+    <style type="text/css">
+        #resizable{
+            width: 100px;
+            height: 100px;
+            border: 2px red solid;
+        }
+        
+        #also{
+            width: 100px;
+            height: 100px;
+            border: 2px blue solid;
+        }
+        
+        #draggable{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+        
+        #droppable{
+            width:300px;
+            height:300px;
+            background-color: red;
+        }
+        
+    </style>
+
+</head>
+    
+    <body>
+        
+        <h1>Draggable jQuery-Ui</h1>
+        <div id="draggable1">Drag this Text anywhere</div>
+        
+        <div id="draggable-v">Vertically Draggable text</div>
+        
+            <div style="width:400px; height:400px; background-color: yellow">
+            
+                <span id="draggable-inside">I am Stuck Inside the yellow box!!!</span>
+            </div>
+        <h1>Resizable jQuery-Ui</h1>
+        <h2>Implemented Synchronised Resizable</h2>
+        <div id="resizable" class="ui-widget-header"> </div>    
+        <div id="also" class="ui-widget-content"> </div>    
+          <h1>Droppable jQuery-Ui</h1>
+        <div id="draggable"></div>
+        <div id="droppable"></div>
+        <h1>Sortable List</h1>
+        <ul id="sortable">
+        	
+        	<li>Ashutosh</li>
+        	<li>Vijay</li>
+        	<li>Gajankush</li>
+        	
+        </ul>
+        <script type="text/javascript">
+            
+            $( "#draggable1" ).draggable();
+           
+            $("#draggable-v").draggable({axis : "y"}) ;
+            
+            $("#draggable-inside").draggable({containment: "parent"});
+         
+            $("#resizable").resizable({
+                alsoResize: "#also"
+            }); 
+            
+            $("#also").resizable();
+          
+            $("#draggable").draggable();
+                
+            $("#droppable").droppable({
+            	drop: function( event, ui ) {
+                alert("Dropped!!!");
+                }
+            });
+          	
+          	$("#sortable").sortable();
+        </script>      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

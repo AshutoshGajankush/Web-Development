@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>AJAX</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	
+</head>
+<body>
+	
+	<p></p>
+	
+	<script type="text/javascript">
+	   /*
+       
+       The problem with this method is that when the get method fails due to some reason then there is no error msg for the user.
+       
+        $.get("info.txt",function(data){
+           alert(data);
+        });
+        
+        */
+        
+        $.ajax("info.txt").done(function(data){
+                $("p").html(data);
+        }).fail(function(){
+            alert("Failed to load the content!!!");
+        });
+        
+    </script>
+</body>
+</html>
